@@ -311,3 +311,121 @@ a{
 .footer-bar > .footer-container > a:hover{
   color: #1DA1F3;
 }
+
+/*Phone Sizing*/
+@media only screen and (max-width: 600px) {
+  /* Update padding and font sizes for responsiveness */
+  .menu {
+    padding: 10px 20px;
+  }
+
+  .menu-item a {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .short-info-but {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .name-info1 {
+    font-size: 24px;
+    display: flex;
+  }
+
+  .name-info2,
+  .name-info3 {
+    font-size: 48px;
+    display: flex;
+  }
+
+  .name-catalin{
+    margin-top: -30px;
+    display: flex;
+  }
+
+  .contact-me {
+    padding: 12px 30px;
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .work-info {
+    margin-top: 40px;
+    display: flex;
+    margin-left: 140px;
+    text-align: center;
+  }
+
+  .work-find {
+    font-size: 18px;
+    margin-top: 10px;
+    
+  }
+
+  .work-info a {
+    padding: 4px;
+  }
+
+  .information-about-me {
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+
+  .information-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .information-plan {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .plan-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .plan-info {
+    font-size: 16px;
+  }
+
+  .section-title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .website-container {
+    padding: 20px;
+  }
+
+  .project-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .website-template {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-bar {
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+  }
+
+  .footer-bar .footer-container a {
+    font-size: 18px;
+    text-indent: 0;
+  }
+}

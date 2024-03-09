@@ -6,13 +6,8 @@
 }
 
 body {
-  background-color: #011222;
-  font-family: 'Roboto', sans-serif;
-}
-
-.dkark-mode{
-    background-color: black;
-    color: white;
+  background-color: #222831;
+  font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -22,71 +17,31 @@ a{
 /*MENU ITEMS */
 
 .logo{
-  font-size: 18px;
-  border-radius: 6px;
-  color: black;
-  background-color: #FCE803;
-  padding: 7px;
+  font-size: 32px;
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
 }
 
 .menu{
   position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 20px 400px;
+  padding: 20px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
 
-.menu-item{
-  background-color: #FCE803;
-  padding: 7px;
-  border-radius: 6px;
-  margin-left: 400px;
-}
-
-.menu-stream{
-  background-color: #FCE803;
-  padding: 7px;
-  border-radius: 6px;
-  
-}
-
-.menu-stream a{
-  position: relative;
-  font-size: 20px;
-  color: black;
-  font-weight: 500;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.menu-dark{
-  background-color: #FCE803;
-  padding: 7px;
-  border-radius: 6px;
-}
-
-.menu-dark a{
-  position: relative;
-  font-size: 20px;
-  color: black;
-  font-weight: 500;
-  padding: 10px;
-  text-decoration: none;
-}
-
 .menu-item a{
   position: relative;
   font-size: 18px;
-  color: black;
+  color: #fff;
   font-weight: 500;
-  padding: 10px;
+  margin-left: 40px;
   text-decoration: none;
-  transition: 1s;
 }
 
 .menu-item a::before{
@@ -94,26 +49,21 @@ a{
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: -5px;
   width: 0;
   height: 2px;
-  background-color: #101720;
-  transition: .5s;
+  background-color: #1DA1F3;
+  transition: .3s;
 }
 
 .menu-item a:hover::before{
   width: 100%;
 }
 
-.hello{
-  color: #0066FF;
-}
-
 /*Short Info Text */
 
 .short-info-but{
   position: relative;
-  padding: 100px 400px;
+  padding: 200px 340px;
 }
 
 .head_img{
@@ -121,9 +71,9 @@ a{
   display: flex;
   top: 0;
   right: 0;
-  margin-right: 400px;
-  margin-top: 2vh;
-  height: 430px;
+  margin-right: 340px;
+  margin-top: 150px;
+  height: 290px;
 }
 
 .name-info1{
@@ -152,9 +102,8 @@ a{
 /*Button Short Info*/
 
 .button{
-  position: relative;
+  position: absolute;
   padding: 120px 0px;
-  margin-left: -5vh;
 }
 
 .download-button {
@@ -164,7 +113,6 @@ a{
   font-size: 15px;
   font-weight: 600;
   border-radius: 4px;
-  margin-left: 60px;
   z-index: 1;
  }
  
@@ -174,7 +122,7 @@ a{
   justify-content: space-between;
   gap: 10px;
   min-height: 40px;
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 4px;
   z-index: 1;
   background-color: #242a35;
@@ -194,7 +142,7 @@ a{
   z-index: -1;
   border-radius: 4px;
   transform: translateY(0%);
-  background-color: #FCE803;
+  background-color: #1DA1F3;
   border: solid 1px #01e0572d;
   transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
  }
@@ -221,35 +169,14 @@ a{
   }
  }
 
-.spliter {
-  width: 1073px;
-  height: 1px;
-  justify-content: center;
-  position: absolute;
-  margin-left: 400px;
-}
-
-.spliter .divider {
-  position: relative;
-  width: 1076px;
-  height: 4px;
-  background-color: #ffffff;
-  border: 1px solid;
-  opacity: 0.2;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
 /*Work Finder */
 
 .work-info{
-  position: relative;
+  position: absolute;
   display: inline-block;
-  display: flex;
-  margin-top: -17vh;
+  margin-top: 122px;
   list-style: none;
-  margin-left: 12vh;
+  margin-left: 200px;
 }
 
 .work-find{
@@ -262,7 +189,7 @@ a{
   transition: .5=8s;
 }
 .work-info> .work-find> a:hover{
-  color: #FCE803;
+  color: #1DA1F3;
   transition: .5s;
 }
 
@@ -273,71 +200,57 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 19vh;
+  flex-flow:column wrap;
+  margin-top: 30px;
 }
 
 .information-about-me > h2{
-  color: black;
-  background-color: #FCE803;
-  border-radius: 6px;
-  padding: 7px;
-  margin-top: -15vh;
-  margin-bottom: 50px;
-  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
+  color: white;
+  text-align: center;
 }
 
+.information-about-me > p{
+  text-align: center;
+  color: #727c81;
+  margin-top: 13px;
+}
 
 /*Information Boxies */
 
 .information-container{
-  position: relative;
-  padding: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 0.18fr);
-  grid-template-rows: repeat(2, fr);
-  height: 75vh;
+  height: 50vh;
+  gap: 2rem;
 }
 
 .information-plan{
   flex: 1;
+  max-width: 400px;
   padding: 20px;
-  background-color: #FCE803;
+  background-color: #292931;
   border-radius: 20px;
-  max-width: 300px;
-  text-align: center;
-  transition: .5s;
-}
-
-.information-plan2{
-  flex: 1;
-  padding: 20px;
-  background-color: #0066FF;
-  border-radius: 20px;
-  max-width: 300px;
   text-align: center;
   transition: .5s;
 }
 
 .information-plan:hover{
-  box-shadow: 0px 0px 20px #FCE803;
-  transform: translateY(-32px);
-}
-
-.information-plan2:hover{
-  box-shadow: 0px 0px 20px #0066FF;
+  box-shadow: 0px 0px 20px #7d7d94;
   transform: translateY(-32px);
 }
 
 .plan-title{
-  color: black;
+  color: white;
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.plan-info .logo-skills{
-  max-width: 200px;
+.plan-info{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .plan-features{
@@ -365,7 +278,7 @@ a{
 /*Portofolio Section */
 
 .section-title{
-  color: black;
+  color: #177ab8;
   width: 50%;
   margin-left: auto;
   text-align: center;
@@ -373,21 +286,6 @@ a{
   margin-bottom: 72px;
   box-sizing: border-box;
 }
-
-.section-title h2{
-  width: 200px;
-  padding: 7px;
-  border-radius: 6px;
-  font-size: 26px;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-  background-color: #FCE803;
-  color: black;
-  background-size: 10%;
-  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
-}
-
 .lead{
   color: #948daa;
   font-size: 1.25rem;
@@ -402,90 +300,26 @@ a{
 
 .portofolio-section{
   position: relative;
-  margin-top: 130px;
 }
 
-/*About me*/
-.about-me-title{
-  margin-top: 50px;
-  width: 50%;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-  margin-bottom: 72px;
-  box-sizing: border-box;
+/*Typing Demo*/
+
+.wrapper {
+  height: 30px;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
 
-.about-me-title h2{
-  width: 200px;
-  padding: 7px;
-  border-radius: 6px;
-  font-size: 26px;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-  background-color: #FCE803;
-  color: black;
-  background-size: 10%;
-  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
+.typing-demo {
+  width: 13ch;
+  animation: typing 2s steps(22), blink .3s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
 }
-
-.about-what-i-do{
-  background-size: 100px;
-  margin-right: 500px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #101720;
-  border-radius: 6px;
-  font-size: 1.25rem;
-  margin-top: 20px;
-}
-
-.about-who-i-am{
-  background-size: 100px;
-  margin-left: 500px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #101720;
-  border-radius: 6px;
-  font-size: 1.25rem;
-  margin-top: 20px;
-}
-
-.yellow-color{
-  color: #FCE803;
-}
-
-.what{
-  margin-right: 300px;
-}
-
-.stack{
-  margin-left: 45px;
-}
-
-.currently{
-  margin-right: 40px;
-}
-
-.bracket{
-  margin-right: 400px;
-}
-
-.who-i-about-me{
-  margin-right: 300px;
-}
-
-.age-about{
-  margin-right: 135px;
-}
-
-.nationality-about{
-  margin-right: 22px;
-}
-
-
-/* keyframe*/
 
 @keyframes typing {
   from {
@@ -514,34 +348,20 @@ a{
   position: relative;
   display: flex;
   float: right;
-  bottom: 18vh;
+  bottom: 100px;
 }
 
-.hospital_image{
+.website-template, .hospital_image{
   position: absolute;
   display: flex;
   top: 0;
   right: 0;
   margin-right: 150px;
   max-width: auto;
-  height: 220px;
+  height: 250px;
   border-radius: 5px;
   cursor: pointer;
 }
-
-.personal_image{
-  position: absolute;
-  display: flex;
-
-  top: 0;
-  right: 0;
-  margin-right: 150px;
-  max-width: auto;
-  height: 220px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 
 /*Live and Source Code button*/
 
@@ -606,7 +426,6 @@ a{
 .button_git{
   position: relative;
   gap: 100px;
-  margin-bottom: 15vh;
 }
 
 .source_code {
@@ -684,7 +503,7 @@ a{
 }
 
 .footer-bar > .footer-container > a:hover{
-  color: #FCE803;
+  color: #1DA1F3;
 }
 
 /*Header Page*/
@@ -702,25 +521,13 @@ a{
 /*Phone Sizing*/
 @media only screen and (max-width: 600px) {
   /* Update padding and font sizes for responsiveness */
-
-  .divider{
-    display: none;
-  }
-
-  .spliter{
-    display: none;
-  }
-
   .menu {
-    padding: 10px 10px;
-    justify-content: space-between;
-    display: flex;
-    position: relative;
+    padding: 10px 20px;
   }
 
-  .menu-item {
-    margin-left: 10px;
-    font-size: 10px;
+  .menu-item a {
+    margin-left: 20px;
+    font-size: 14px;
   }
 
   .head_img{
@@ -732,7 +539,7 @@ a{
   }
 
   .short-info-but {
-    padding: 100px 100px;
+    padding: 100px 20px;
     text-align: center;
   }
 
@@ -747,36 +554,21 @@ a{
     display: flex;
   }
 
-  .name-info3{
-    margin-top: -35px;
-  }
-
   .name-catalin{
     margin-top: -30px;
     display: flex;
   }
 
-  .button{
-    position: absolute;
-    padding: 30px 0px;
-    margin-left: 1px;
+  .contact-me {
+    padding: 12px 30px;
+    margin-top: 40px;
+    display: flex;
   }
 
-  .download-button {
-    position: relative;
-    border-width: 0;
-    color: white;
-    font-size: 15px;
-    font-weight: 100;
-    border-radius: 4px;
-    margin-left: 10px;
-    z-index: 1;
-   }
-
   .work-info {
-    margin-top: 30px;
+    margin-top: 40px;
     display: flex;
-    margin-left: 12vh;
+    margin-left: 140px;
     text-align: center;
   }
 
@@ -791,18 +583,14 @@ a{
   }
 
   .information-about-me {
-    padding: 10px 20px;
-    margin-top: 60px;
+    padding: 40px 20px;
+    margin-top: 20px;
   }
 
   .information-container {
-    display: grid;
-    gap: 10px 10px;
     flex-direction: column;
-    grid-template-columns: repeat(3, 0.08fr);
-    grid-template-rows: repeat(2, fr);
-    height: 40vh;
-    padding: 0px;
+    height: auto;
+    padding: 20px;
   }
 
   .information-plan {
@@ -812,16 +600,12 @@ a{
   }
 
   .plan-title {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
 
   .plan-info {
-    font-size: 10px;
-  }
-
-  .plan-info .logo-skills{
-    max-width: 100px;
+    font-size: 16px;
   }
 
   .section-title {
@@ -858,82 +642,4 @@ a{
     font-size: 18px;
     text-indent: 0;
   }
-
-  .about-me-title{
-  margin-top: 10vh;
-  width: 50%;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-  margin-bottom: 72px;
-  box-sizing: border-box;
-}
-
-.about-me-title h2{
-  width: 200px;
-  padding: 7px;
-  border-radius: 6px;
-  font-size: 26px;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-  background-color: #FCE803;
-  color: black;
-  background-size: 10%;
-  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
-}
-
-.about-what-i-do{
-  background-size: 100px;
-  margin-right: -100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #101720;
-  border-radius: 6px;
-  font-size: 1.25rem;
-  margin-top: 20px;
-}
-
-.about-who-i-am{
-  background-size: 100px;
-  margin-left: -100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #101720;
-  border-radius: 6px;
-  font-size: 1.25rem;
-  margin-top: 20px;
-}
-
-.yellow-color{
-  color: #FCE803;
-}
-
-.what{
-  margin-right: 300px;
-}
-
-.stack{
-  margin-left: 45px;
-}
-
-.currently{
-  margin-right: 40px;
-}
-
-.bracket{
-  margin-right: 400px;
-}
-
-.who-i-about-me{
-  margin-right: 300px;
-}
-
-.age-about{
-  margin-right: 135px;
-}
-
-.nationality-about{
-  margin-right: 22px;
-}
 }

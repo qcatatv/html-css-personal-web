@@ -6,41 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b4b7282228.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav_icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav_icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav_icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link href="./style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <title>QDEV</title>
+    <title>qCata</title>
 </head>
-<body class="dark-mode">
-    
+<body>
     <menu class="menu">
-        <a class="logo" href="./index.html">QDEV</a>
+        <a class="logo" href="./index.html"> <i class="fa-solid fa-q"></i></a>
         <nav class="menu-item">
-            <a href="#skills">Skills</a>
-            <a href="#about-me">About</a>
-            <a href="#portofolio-section">Portofolio</a>
-        </nav>
-        <nav class="menu-stream">
-            <a href="https://www.twitch.tv/qcatadev"><i class="fa-solid fa-play"></i></a> 
-        </nav>
-        <nav class="menu-dark">
-            <a href="#" onclick="myFunction()"><i class="fa-solid fa-moon"></i></a> 
+            <a href="#">Projects</a>
+            <a href="https://www.twitch.tv/qcatatv">Twitch</a>
+            <a href="./assets/cv_info/EN_Rosioru_Catalin.pdf">View CV</a>
         </nav>
     </menu>
-    <div class="short-info-but" id="home-site">
-        <img class="head_img" src="./assets/image/my-photo.png">
-        <a class="name-info1"><span class="hello">Hello</span>, I'm</a>
+    <div class="short-info-but">
+        <img class="head_img" src="./assets/image/head_image.png">
+        <a class="name-info1"><i class="fa-solid fa-hand"></i> Hello, I'm</a>
         <br /><a class="name-info2"><strong>Rosioru</a><br />
-        <br /><br /><a class="name-info3">Catalin</a></strong>
+        <br /><br /><a class="name-info3"><span class="name-catalin">Catalin</span></a></strong>
         <div class="button">
             <button class="download-button">
-                <div class="docs"><a href="./assets/cv_info/EN_Rosioru_Catalin.pdf">Watch my CV</a></div>
+                <div class="docs"><a href="./assets/cv_info/EN_Rosioru_Catalin.pdf">Donwload my CV</a></div>
                 <div class="download">
                   <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
               </button>
@@ -52,73 +44,49 @@
             </li>
         </ul>
     </div>
-
-    <div class="spliter"><div class="divider"></div></div>
     
-    <div class="information-about-me" id="skills">
-        <h2 class="code-skill">Coding Skills <i class="fa-solid fa-laptop-code"></i></h2>
+    <div class="information-about-me">
+        <h2><i class="fa-solid fa-caret-right"></i> WELCOME TO MY WORLD <i class="fa-solid fa-caret-left"></i></h2>
+        <p>I'm a young developer looking to take on the tech world by storm. <br>I grew up in a first generation Bucharest household in Romania </p>
     </div>
     <div class="information-container">
         <div class="information-plan">
           <div class="plan-title"><i class="fa-brands fa-html5"></i> HTML</div>
-          <div class="plan-info"><img class="logo-skills" src="./assets/logo-assets/html.png" alt=""></div>
+          <div class="plan-info">Proficient in creating structured and accessible HTML code for websites, ensuring cross-device compatibility and SEO optimization. Skilled in utilizing semantic HTML5 for modern web development.
+
+          </div>
         </div>
         <div class="information-plan">
           <div class="plan-title"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-          <div class="plan-info"><img class="logo-skills" src="./assets/logo-assets/css.png" alt=""></div>
+          <div class="plan-info">Proficient in CSS for styling websites, ensuring visual attractiveness and responsiveness. Familiar with Sass for streamlined coding and staying updated with evolving design trends.
+          </div>
         </div>
         <div class="information-plan">
           <div class="plan-title"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
-          <div class="plan-info"><img class="logo-skills" src="./assets/logo-assets/bootstrap.png" alt=""></div>
+          <div class="plan-info">Skilled in Bootstrap for fast, responsive website creation. Capable of customizing components for unique designs while ensuring compatibility across devices.
+          </div>
         </div>
-        <div class="information-plan2">
-            <div class="plan-title"><i class="fa-brands fa-js"></i> JS</div>
-            <div class="plan-info"><img class="logo-skills" src="./assets/logo-assets/javascript.png" alt=""></div>
-        </div>
-        <div class="information-plan2">
-            <div class="plan-title"><i class="fa-brands fa-react"></i> React</div>
-            <div class="plan-info"><img class="logo-skills" src="./assets/logo-assets/react.png" alt=""></div>
-        </div>
-        <div class="information-plan2">
-            <div class="plan-title"><i class="fa-brands fa-wordpress-simple"></i> WordPress</div>
-            <div class="plan-info"><img class="logo-skills" src="./assets/logo-assets/wordpress.png" alt=""></div>
-        </div>
-    </div>
-
-    <div class="spliter"><div class="divider"></div></div>
-    
-    <div class="about-me" id="about-me">
-        <div class="about-me-title">
-            <h2>About Me <i class="fa-regular fa-folder"></i></h2>
-            <p class="about-what-i-do"><span class="what">Waht I do {</span><br>
-                <span class="stack">Stack: <span class="yellow-color">Fontent Web Developer;</span></span><br>
-                <span class="currently">currently: <span class="yellow-color">Freelancer;</span></span><br>
-                <span class="bracket">}</span></p>
-            <p class="about-who-i-am"><span class="who-i-about-me">Who I am {</span> <br>
-                            Name: <span class="yellow-color">Rosioru Catalin;</span><br>
-                            <span class="age-about">age: <span class="yellow-color">21;</span></span><br>
-                            <span class="nationality-about">nationality:<span class="yellow-color">Romania;</span></span><br>
-                            <span class="bracket">}</span>
-            </p>    
-        </div>
-
-        <div class="spliter"><div class="divider"></div></div>
-
-    <section class="portofolio-section" id="portofolio-section">
+      </div>
+      <section class="portofolio-section">
         <div class="container">
             <div class="section-title">
-                <h2>Portofolio <i class="fa-regular fa-file"></i></h2>
+                <h2>Portofolio</h2>
                 <p class="lead">Here's a few of my recent</p>
+                <div class="wrapper">
+                    <div class="typing-demo">
+                      Coming Soon.
+                    </div>
+                </div>
             </div>
             <div class="button-group">
             </div>
         </div>
         <div class="website-container">
             <div class="project-text">
-                <h3 class="project-text-title">Hospital Project</h3>
+                <h3 class="project-text-title">Digital Spaniel</h3>
             </div>
             <div class="project-info">
-                <p>I only used HTML and CSS. Navigation is sticky and hides when scrolling down and shows back when scrolling up. I used some reusable components. The app is fully responsive.</p>
+                <p><i class="fa-regular fa-hospital"></i> Hospital Project - Used ContextApi, created local db and passed the data via ContextApi to testimonials. Used boostrap, styled-components. The navigation is sticky and hide on scroll down and show back on scroll up. I used some reusable componenents. The app is fully responsive.</p>
             </div>
             <div class="website-template">
                 <img class="hospital_image" onclick="window.location.href='https://hospital-template-2023-bosh9dr90-qcatatv.vercel.app/';" src="./assets/image/hospital_website.png">
@@ -127,27 +95,12 @@
                 <button onclick="window.location.href='https://hospital-template-2023-bosh9dr90-qcatatv.vercel.app/';" class="live_view"><span>Live View</span></button>
                 <button onclick="window.location.href='https://github.com/qCataTV/hospital-template-2023';" class="source_code"><span>Source Code</span></button>
             </div>
-
-
-            <div class="project-text">
-                <h3 class="project-text-title">Hospital Project</h3>
-            </div>
-            <div class="project-info">
-                <p>I only used HTML and CSS. Navigation is sticky and hides when scrolling down and shows back when scrolling up. I used some reusable components. The app is fully responsive.</p>
-            </div>
-            <div class="website-template">
-                <img class="personal_image" onclick="window.location.href='https://html-css-personal-web.vercel.app/';" src="./assets/image/personal_website_template.png">
-            </div>
-            <div class="button_git">
-                <button onclick="window.location.href='https://html-css-personal-web.vercel.app/';" class="live_view"><span>Live View</span></button>
-                <button onclick="window.location.href='https://github.com/qcatatv/html-css-personal-web';" class="source_code"><span>Source Code</span></button>
-            </div>
         </div>
     </section>
     <footer class="footer-bar">
         <div class="footer-container">
-            <a href="https://www.instagram.com/qdevstudio/" role="button"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCVSnuKHaKYDB2pAt-Hn1tgA" role="button"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/qcatatv/" role="button"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/qcatatv" role="button"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.linkedin.com/in/rosioru-catalin-70a567204/" role="button"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://twitter.com/qCataTV" role="button"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://github.com/qCataTV" role="button"><i class="fa-brands fa-github"></i></a>

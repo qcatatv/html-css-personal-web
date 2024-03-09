@@ -1,90 +1,939 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b4b7282228.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav_icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav_icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav_icon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="./style.css" rel="stylesheet">
-    <title>qCata</title>
-</head>
-<body>
-    <menu class="menu">
-        <a class="logo" href="./index.html"> <i class="fa-solid fa-q"></i> </a>
-        <nav class="menu-item">
-            <a href="./project.html"> <i class="fa-solid fa-wrench"></i> Project (SOON)</a>
-            <a href="https://www.twitch.tv/qcatatv"> <i class="fa-brands fa-twitch"></i> Twitch</a>
-            <a href="./assets/cv_info/EN_Rosioru_Catalin.pdf"><i class="fa-regular fa-file"></i> View CV</a>
-        </nav>
-    </menu>
-    <div class="short-info-but">
-        <a class="name-info1"><i class="fa-solid fa-hand"></i> Hello, I'm</a>
-        <br /><a class="name-info2"><strong>Rosioru</a><br />
-        <br /><br /><a class="name-info3"><span class="name-catalin">Catalin</span></a></strong>
-        <div class="button">
-            <button type="submit" href="mailto: tylersortijas@gmail.com" class="contact-me">CONTACT ME</button>
-        </div>
-        <ul class="work-info">
-            <li class="work-find">
-                <a href="https://www.linkedin.com/in/rosioru-catalin-70a567204/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/qCataTV"><i class="fa-brands fa-github"></i></a>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="information-about-me">
-        <h2><i class="fa-solid fa-caret-right"></i> WELCOME TO MY WORLD <i class="fa-solid fa-caret-left"></i></h2>
-        <p>I'm a young developer looking to take on the tech world by storm. <br>I grew up in a first generation Bucharest household in Romania </p>
-    </div>
-    <div class="information-container">
-        <div class="information-plan">
-          <div class="plan-title"><i class="fa-brands fa-html5"></i> HTML</div>
-          <div class="plan-info">Proficient in creating structured and accessible HTML code for websites, ensuring cross-device compatibility and SEO optimization. Skilled in utilizing semantic HTML5 for modern web development.
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 
-          </div>
-        </div>
-        <div class="information-plan">
-          <div class="plan-title"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-          <div class="plan-info">Proficient in CSS for styling websites, ensuring visual attractiveness and responsiveness. Familiar with Sass for streamlined coding and staying updated with evolving design trends.
-          </div>
-        </div>
-        <div class="information-plan">
-          <div class="plan-title"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
-          <div class="plan-info">Skilled in Bootstrap for fast, responsive website creation. Capable of customizing components for unique designs while ensuring compatibility across devices.
-          </div>
-        </div>
-      </div>
-      <section class="portofolio-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Portofolio</h2>
-                <p class="lead">Here's a few of my recent</p>
-                <div class="wrapper">
-                    <div class="typing-demo">
-                      Coming Soon.
-                    </div>
-                </div>
-            </div>
-            <div class="button-group">
-            </div>
-        </div>
-    </section>
-    <footer class="footer-bar">
-        <div class="footer-container">
-            <a href="https://www.instagram.com/qcatatv/" role="button"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/qcatatv" role="button"></a><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/rosioru-catalin-70a567204/" role="button"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/qCataTV" role="button"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://github.com/qCataTV" role="button"><i class="fa-brands fa-github"></i></a>
-        </div>
-    </footer>
-</body>
-</html>
+body {
+  background-color: #011222;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dkark-mode{
+    background-color: black;
+    color: white;
+}
+
+a{
+  text-decoration: none;
+  color:white
+}
+/*MENU ITEMS */
+
+.logo{
+  font-size: 18px;
+  border-radius: 6px;
+  color: black;
+  background-color: #FCE803;
+  padding: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.menu{
+  position: relative;
+  width: 100%;
+  padding: 20px 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.menu-item{
+  background-color: #FCE803;
+  padding: 7px;
+  border-radius: 6px;
+  margin-left: 400px;
+}
+
+.menu-stream{
+  background-color: #FCE803;
+  padding: 7px;
+  border-radius: 6px;
+  
+}
+
+.menu-stream a{
+  position: relative;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu-dark{
+  background-color: #FCE803;
+  padding: 7px;
+  border-radius: 6px;
+}
+
+.menu-dark a{
+  position: relative;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu-item a{
+  position: relative;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.menu-item a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #101720;
+  transition: .5s;
+}
+
+.menu-item a:hover::before{
+  width: 100%;
+}
+
+.hello{
+  color: #0066FF;
+}
+
+/*Short Info Text */
+
+.short-info-but{
+  position: relative;
+  padding: 100px 400px;
+}
+
+.head_img{
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  margin-right: 400px;
+  margin-top: 2vh;
+  height: 430px;
+}
+
+.name-info1{
+  position: absolute;
+  font-size: 35px;
+  color: white;
+}
+
+.name-info2{
+  position: absolute;
+  font-size: 90px;
+  color: white;
+  text-indent: 0px;
+  line-height: 1.3;
+}
+
+.name-info3{
+  position: absolute;
+  font-size: 90px;
+  color: white;
+  text-indent: 0px;
+  line-height: 1.3;
+  padding-top: 5px;
+}
+
+/*Button Short Info*/
+
+.button{
+  position: relative;
+  padding: 120px 0px;
+  margin-left: -5vh;
+}
+
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-left: 60px;
+  z-index: 1;
+ }
+ 
+ .download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ 
+ .download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #FCE803;
+  border: solid 1px #01e0572d;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ .download-button:hover .download {
+  transform: translateY(100%)
+ }
+ 
+ .download svg polyline,.download svg line {
+  animation: docs 1s infinite;
+ }
+ 
+ @keyframes docs {
+  0% {
+   transform: translateY(0%);
+  }
+ 
+  50% {
+   transform: translateY(-15%);
+  }
+ 
+  100% {
+   transform: translateY(0%);
+  }
+ }
+
+.spliter {
+  width: 1073px;
+  height: 1px;
+  justify-content: center;
+  position: absolute;
+  margin-left: 400px;
+}
+
+.spliter .divider {
+  position: relative;
+  width: 1076px;
+  height: 4px;
+  background-color: #ffffff;
+  border: 1px solid;
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/*Work Finder */
+
+.work-info{
+  position: relative;
+  display: inline-block;
+  display: flex;
+  margin-top: -17vh;
+  list-style: none;
+  margin-left: 12vh;
+}
+
+.work-find{
+  font-size: 24px;
+}
+
+.work-info> .work-find> a{
+  color: white;
+  padding: 6px;
+  transition: .5=8s;
+}
+.work-info> .work-find> a:hover{
+  color: #FCE803;
+  transition: .5s;
+}
+
+/*Information Boxis*/
+
+.information-about-me{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19vh;
+}
+
+.information-about-me > h2{
+  color: black;
+  background-color: #FCE803;
+  border-radius: 6px;
+  padding: 7px;
+  margin-top: -15vh;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
+}
+
+
+/*Information Boxies */
+
+.information-container{
+  position: relative;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 0.18fr);
+  grid-template-rows: repeat(2, fr);
+  height: 75vh;
+}
+
+.information-plan{
+  flex: 1;
+  padding: 20px;
+  background-color: #FCE803;
+  border-radius: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: .5s;
+}
+
+.information-plan2{
+  flex: 1;
+  padding: 20px;
+  background-color: #0066FF;
+  border-radius: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: .5s;
+}
+
+.information-plan:hover{
+  box-shadow: 0px 0px 20px #FCE803;
+  transform: translateY(-32px);
+}
+
+.information-plan2:hover{
+  box-shadow: 0px 0px 20px #0066FF;
+  transform: translateY(-32px);
+}
+
+.plan-title{
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan-info .logo-skills{
+  max-width: 200px;
+}
+
+.plan-features{
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features > li{
+  margin-bottom: 20px;
+}
+
+.plan-button{
+  padding: 10px;
+  background-color: #1DA1F3;;
+  color: #f2f2f2;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*Portofolio Section */
+
+.section-title{
+  color: black;
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 72px;
+  box-sizing: border-box;
+}
+
+.section-title h2{
+  width: 200px;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 26px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  background-color: #FCE803;
+  color: black;
+  background-size: 10%;
+  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
+}
+
+.lead{
+  color: #948daa;
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-top: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.portofolio-section{
+  position: relative;
+  margin-top: 130px;
+}
+
+/*About me*/
+.about-me-title{
+  margin-top: 50px;
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 72px;
+  box-sizing: border-box;
+}
+
+.about-me-title h2{
+  width: 200px;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 26px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  background-color: #FCE803;
+  color: black;
+  background-size: 10%;
+  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
+}
+
+.about-what-i-do{
+  background-size: 100px;
+  margin-right: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #101720;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.about-who-i-am{
+  background-size: 100px;
+  margin-left: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #101720;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.yellow-color{
+  color: #FCE803;
+}
+
+.what{
+  margin-right: 300px;
+}
+
+.stack{
+  margin-left: 45px;
+}
+
+.currently{
+  margin-right: 40px;
+}
+
+.bracket{
+  margin-right: 400px;
+}
+
+.who-i-about-me{
+  margin-right: 300px;
+}
+
+.age-about{
+  margin-right: 135px;
+}
+
+.nationality-about{
+  margin-right: 22px;
+}
+
+
+/* keyframe*/
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/*Website container */
+
+.website-container{
+  position: relative;
+  padding: 20px 200px;
+}
+
+.project-info{
+  width: 500px;
+}
+
+.website-template{
+  position: relative;
+  display: flex;
+  float: right;
+  bottom: 18vh;
+}
+
+.hospital_image{
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  margin-right: 150px;
+  max-width: auto;
+  height: 220px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.personal_image{
+  position: absolute;
+  display: flex;
+
+  top: 0;
+  right: 0;
+  margin-right: 150px;
+  max-width: auto;
+  height: 220px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/*Live and Source Code button*/
+
+.live_view {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #1DA1F3, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.live_view svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.live_view span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.live_view::before,
+.live_view::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.live_view::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.live_view:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.live_view:active {
+  transform: scale(0.95);
+}
+
+
+
+.button_git{
+  position: relative;
+  gap: 100px;
+  margin-bottom: 15vh;
+}
+
+.source_code {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #1DA1F3, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.source_code svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.source_code span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.source_code::before,
+.source_code::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.source_code::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.source_code:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.source_code:active {
+  transform: scale(0.95);
+}
+
+
+/*Footer Bar*/
+
+.footer-bar{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar > .footer-container > a{
+  color: #f2f2f2;
+  font-size: 20px;
+  text-indent: 12px;
+  transition: 0.3s;
+}
+
+.footer-bar > .footer-container > a:hover{
+  color: #FCE803;
+}
+
+/*Header Page*/
+
+.header-text{
+  color: #177ab8;
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 72px;
+  box-sizing: border-box;
+}
+
+/*Phone Sizing*/
+@media only screen and (max-width: 600px) {
+  /* Update padding and font sizes for responsiveness */
+
+  .divider{
+    display: none;
+  }
+
+  .spliter{
+    display: none;
+  }
+
+  .menu {
+    padding: 10px 10px;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+  }
+
+  .menu-item {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .head_img{
+    position: absolute;
+    display: flex;
+    margin-right: 50px;
+    height: 190px;
+    margin-top: 85px;
+  }
+
+  .short-info-but {
+    padding: 100px 100px;
+    text-align: center;
+  }
+
+  .name-info1 {
+    font-size: 24px;
+    display: flex;
+  }
+
+  .name-info2,
+  .name-info3 {
+    font-size: 48px;
+    display: flex;
+  }
+
+  .name-info3{
+    margin-top: -35px;
+  }
+
+  .name-catalin{
+    margin-top: -30px;
+    display: flex;
+  }
+
+  .button{
+    position: absolute;
+    padding: 30px 0px;
+    margin-left: 1px;
+  }
+
+  .download-button {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    border-radius: 4px;
+    margin-left: 10px;
+    z-index: 1;
+   }
+
+  .work-info {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 12vh;
+    text-align: center;
+  }
+
+  .work-find {
+    font-size: 18px;
+    margin-top: 10px;
+    
+  }
+
+  .work-info a {
+    padding: 4px;
+  }
+
+  .information-about-me {
+    padding: 10px 20px;
+    margin-top: 60px;
+  }
+
+  .information-container {
+    display: grid;
+    gap: 10px 10px;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 0.08fr);
+    grid-template-rows: repeat(2, fr);
+    height: 40vh;
+    padding: 0px;
+  }
+
+  .information-plan {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .plan-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .plan-info {
+    font-size: 10px;
+  }
+
+  .plan-info .logo-skills{
+    max-width: 100px;
+  }
+
+  .section-title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .website-container {
+    padding: 20px;
+  }
+
+  .project-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .website-template {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-bar {
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+  }
+
+  .footer-bar .footer-container a {
+    font-size: 18px;
+    text-indent: 0;
+  }
+
+  .about-me-title{
+  margin-top: 10vh;
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 72px;
+  box-sizing: border-box;
+}
+
+.about-me-title h2{
+  width: 200px;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 26px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  background-color: #FCE803;
+  color: black;
+  background-size: 10%;
+  box-shadow: 0px 0px 17px 3px rgba(252,232,3,0.59);
+}
+
+.about-what-i-do{
+  background-size: 100px;
+  margin-right: -100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #101720;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.about-who-i-am{
+  background-size: 100px;
+  margin-left: -100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #101720;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.yellow-color{
+  color: #FCE803;
+}
+
+.what{
+  margin-right: 300px;
+}
+
+.stack{
+  margin-left: 45px;
+}
+
+.currently{
+  margin-right: 40px;
+}
+
+.bracket{
+  margin-right: 400px;
+}
+
+.who-i-about-me{
+  margin-right: 300px;
+}
+
+.age-about{
+  margin-right: 135px;
+}
+
+.nationality-about{
+  margin-right: 22px;
+}
+}
